@@ -8,10 +8,10 @@ namespace TestProject1
         [Test]
         public void FirstStringAndSecondString_AreEqual_ReturnTrue()
         {
-            string FirstString = "hello";
-            string SecondString = "hello";
+            string firstString = "hello";
+            string secondString = "hello";
 
-            Assert.AreEqual(FirstString, SecondString, "Strings are not equal");
+            Assert.AreEqual(firstString, secondString, "Strings are not equal");
         }
 
         [Test]
@@ -47,20 +47,26 @@ namespace TestProject1
                 "Mumbai",
                 "Chicago"
             };
-            string city = "Chicago";
+            string nameOfCity = "Chicago";
 
-            Assert.True(FirstStringList.Contains(city), $"List does not contain {city}");
+            Assert.True(FirstStringList.Contains(nameOfCity), $"List does not contain {nameOfCity}");
         }
 
         [Test]
         public void FirstNumberAndSecondNumber_FirstNumberMoreSecondNumber_ReturnTrue()
         {
-            int FirstNumber = 10;
-            int SecondNumber = 20;
+            int firstNumber = 10;
+            int secondNumber = 20;
 
-            Assert.True(FirstNumber < SecondNumber, "Numbers are not equal");
+            Assert.True(firstNumber < secondNumber, "Numbers are not equal");
         }
 
-       
+        [Test]
+        public void SomethingTest()
+        {
+            string text = "abc999defghijklmnopqrstuvwxyzABCXYZ123@0123456789 _ + -.,!@#$%^&*();\'/|<>"+ "\u0022"+"12345 - 98.7 3.141 .6180 9,000 + 42555.123.4567 + 1 - (800) - 555 - 2468 foo @demo.net bar.ba @test.co.uk www.demo.com";
+            
+            
+        }
     }
 }
